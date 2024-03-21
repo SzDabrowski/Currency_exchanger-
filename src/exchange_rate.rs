@@ -51,7 +51,7 @@ impl ApiExchangeRateProvider {
     pub fn get_url(&self, base_currency: &str, target_currency: &str) -> String {
         let api_key = env::var("CURRENCY_API_KEY").expect("CURRENCY_API_KEY not set");
     
-        format!("{}?apikey={}&currencies={}&base_currency={}", self.base_url, api_key, target_currency, base_currency)
+        format!("{}/latest?apikey={}&currencies={}&base_currency={}", self.base_url, api_key, target_currency, base_currency)
     }
 }
 
