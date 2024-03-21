@@ -4,7 +4,7 @@ Currency Converter is a provides functionality for converting currency amounts b
 
 ## Usage
 
-cargo -- <amount> <from_currency> to <to_currency>
+cargo -- <'amount> <from_currency> to <to_currency>
 
 ## Requirements
 
